@@ -5,10 +5,101 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#ffffff"
-    android:orientation="vertical">
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
 
+        <TextView
+            android:id="@+id/tv_question_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question: 1/10"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Score: 0"
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="এখানে আপনার প্রশ্নটি দেখা যাবে?"
+            android:textColor="#212121"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Option 1"
+        android:textColor="#3F51B5" />
+
+    <Button
+        android:id="@+id/btn_option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Option 2"
+        android:textColor="#3F51B5" />
+
+    <Button
+        android:id="@+id/btn_option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Option 3"
+        android:textColor="#3F51B5" />
+
+    <Button
+        android:id="@+id/btn_option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Option 4"
+        android:textColor="#3F51B5" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#3F51B5"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Next"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>
